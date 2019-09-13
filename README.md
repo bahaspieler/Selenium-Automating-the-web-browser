@@ -1,6 +1,6 @@
-#Selenium based Web Automation
+# Selenium based Web Automation
 
-##Installing Dependecies
+## Installing Dependecies
 * chromedriver.exe
 * pandas
 * selenium
