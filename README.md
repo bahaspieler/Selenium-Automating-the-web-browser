@@ -35,3 +35,33 @@ where chrome.exe exist. For example,
 * Run this command `chrome.exe -remote-debugging-port=available_port_no --user-data-dir="where\to\initiate\debugger chrome session"`.
 For me the command is like this, `chrome.exe -remote-debugging-port=9014 --user-data-dir="C:\selenium\chrome"`
 * A Chrome session will be initiated in debugging mode.
+
+## Code Explanation 
+
+#### Importing the required package
+```python
+import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import Select
+```
+
+#### Setting up the chrome browser in debugging mode. 
+For that we have imported `Options` through writing `from selenium.webdriver.chrome.options import Options` earlier.
+```python
+chrome_driver = r'C:\chromedriver\chromedriver.exe' # directory of the chromedriver.exe
+chrome_options = Options()
+chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9014") #change the port number as 127.0.0.1:port no.
+driver= webdriver.Chrome(chrome_driver, chrome_options= chrome_options)
+```
+Use your port number instead of `9014`. And assign the path of your chromedriver.exe to the `chrome_driver`.
+
+#### Pre-processing the inputs
+```python
+df = pd.read_excel(r"C:\path\to\inputs.xlsx", sheet_name=0)
+lst = df['Header_name']
+sites = list(lst)
+print(sites)
+```
+With *pandas*, took the inputs as a list.
+
