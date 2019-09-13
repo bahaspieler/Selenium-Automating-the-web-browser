@@ -6,7 +6,7 @@
   the script and within least time, the job is done. 
   
   Have a look at the *Quick Overview* section to get a glance the *automation*.
-##Quick Overview
+## Quick Overview
 ![overview gif](quick_overview.gif)
   
   *A quick GIF of the Automated Task.*
@@ -25,8 +25,8 @@
   pip install selenium
   `
 
-##Getting Started
-####Running chrome in *debugging* mode
+## Getting Started
+#### Running chrome in *debugging* mode
 To use an existing session of chrome browser, need to initiate a chrome session in debugging mode.
 Because you don't always want to open new session of chrome browser while testing the code and so on. Now,
 * Add *PATH* of chrome to the system environment variable. Or simply run *cmd/terminal* in the location
