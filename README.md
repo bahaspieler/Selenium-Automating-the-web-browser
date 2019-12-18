@@ -5,12 +5,6 @@
   just need to insert the inputs into an excel file and configure the web browser in debugging mode. Then run 
   the script and within least time, the job is done. 
   
-  Have a look at the *Quick Overview* section to get a glance the *automation*.
-## Quick Overview
-![overview gif](quick_overview.gif)
-  
-  *A quick GIF of the Automated Task.*
-
 ## Installing Dependencies
 * chromedriver.exe
 * pandas
